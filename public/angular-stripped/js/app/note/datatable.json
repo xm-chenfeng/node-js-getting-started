@@ -1,0 +1,34 @@
+{ "aaData": [
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 4.0",
+		"platform": "Win 95+",
+		"version": "4",
+		"grade": "X",
+		"ops": "<button class='pull-right btn btn-sm btn-info m-t-n-xs'>View</button>"
+	},
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 5.0",
+		"platform": "Win 95+",
+		"version": "5",
+		"grade": "C",
+"ops": "c"
+	},
+	{
+		"engine": "Trident",
+		"browser": "Internet Explorer 5.5",
+		"platform": "Win 95+",
+		"version": "5.5",
+		"grade": "A",
+"ops": "b"
+	},
+	{
+		"engine": "Other browsers",
+		"browser": "All others",
+		"platform": "-",
+		"version": "-",
+		"grade": "U",
+"ops": "a"
+	}
+] }

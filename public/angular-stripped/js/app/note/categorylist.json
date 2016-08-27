@@ -1,0 +1,16 @@
+{ "categories": [
+  {
+    "id":"1",
+    "parentid": "Trident",
+    "name": "Internet Explorer 4.0",
+    "image": "Win 95+",
+"ops": "adf"
+  },
+  {
+    "id":"2",
+    "parentid": "Other browsers",
+    "name": "Firefox",
+    "image": "def",
+    "ops": "a"
+  }
+] }

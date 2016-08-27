@@ -1,0 +1,54 @@
+
+<!-- hbox layout -->
+<div class="hbox hbox-auto-xs hbox-auto-sm bg-light " ng-init="
+  app.settings.asideFixed = true;
+  app.settings.asideDock = false;
+  app.settings.container = false;
+  app.hideAside = false;
+  app.hideFooter = true;
+  " ng-controller="CategoryCtrl">
+
+
+
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">分类管理</h1>
+</div>
+    <div class="row">
+      <div class="col-sm-12">
+        <form name="categoryadd" class="form-horizontal form-validation">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong>编辑分类</strong>
+            </div>
+            <div class="panel-body">   
+
+              <div class="form-group">
+                <label class="col-sm-3 control-label">ParentId</label>
+                <div class="col-sm-9">
+                  <select class="form-control" ng-model="category.parentid" required >
+                      <option value="">Please coose</option>
+                      <option value="1">Foo</option>
+                      <option value="2">Bar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="{{category.name}}" ng-model="category.name" ng-minlength="5" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Image</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" value="{{category.image}}" ng-model="category.image" ng-maxlength="5" required>
+                </div>
+              </div>
+            </div>
+            <footer class="panel-footer  text-center bg-light lter .col-md-offset-3">
+              <button ng-click="saveCategory(category);" class="btn btn-success">save</button>
+            </footer>
+          </div>
+        </form>
+      </div>
+</div>

@@ -1,0 +1,36 @@
+
+<!-- hbox layout -->
+<div class="hbox hbox-auto-xs hbox-auto-sm bg-light " ng-init="
+  app.settings.asideFixed = true;
+  app.settings.asideDock = false;
+  app.settings.container = false;
+  app.hideAside = false;
+  app.hideFooter = true;
+  " ng-controller="CategoryCtrl">
+
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">分类管理</h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+     <table class="table table-striped m-b-none">
+          <tr>
+            <td class="col-sm6">id</td>
+            <td class="col-sm6">{{category.id}}</td>
+          </tr>
+          <tr>
+            <td class="col-sm6">name</td>
+            <td class="col-sm6">{{category.name}}</td>
+          </tr>
+          <tr>
+            <td class="col-sm6">image</td>
+            <td class="col-sm6">{{category.image}}</td>
+          </tr>
+      </table>
+
+      <footer class="panel-footer  text-center bg-light lter .col-md-offset-3">
+            <a ui-sref="app.category"><button  class="btn btn-sm btn-info m-t-n-xs">back</button></a>
+      </footer>
+    </div>
+</div>
